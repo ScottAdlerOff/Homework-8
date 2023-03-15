@@ -29,11 +29,8 @@ public class Main {
         System.out.println(" ");
         System.out.println("Задача №4");
         for (int i = 0; i < first.length; i++){
-            first[0] = first[0] + 1;
-            first[2] = first[2] + 1;
-            if (i % 2 == 0){
-                System.out.println(first[0]);
-                System.out.println(first[2]);
+            if (first[i] % 2 != 0){
+                System.out.println(first[i]++);
             }
         }
         System.out.println(Arrays.toString(first));
